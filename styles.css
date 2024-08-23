@@ -176,7 +176,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #000000;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -198,6 +198,7 @@ footer {
   animation: marquee 10s linear infinite;
 }
 
+
 @keyframes marquee {
   from {
     transform: translateX(100%);
@@ -208,28 +209,38 @@ footer {
 }
 
 /* Player Container */
-.player-container {
+.player-container{
   display: flex;
   justify-content: center;
   flex-grow: 1;
   align-items: center;
 }
 
-.player-controls {
+.player-controls{
   display: flex;
   gap: 20px;
 }
 
-.player-controls button {
+.player-controls button{
   background: none;
   border: none;
   color: #1ed760;
   cursor: pointer;
+ 
 }
 
 .player-controls img {
   width: 24px;
   height: 24px;
+}
+
+
+.player-controls button {
+  color: var(--secondary-color);
+  border: 2px solid transparent;
+  background: transparent;
+  box-shadow: 0 0 10px #021308, 0 0 40px #00ff59, 0 0 80px #187539;
+  transition-delay: -1s;
 }
 
 /* Seek Bar Container */
@@ -244,6 +255,7 @@ footer {
   flex-grow: 1;
   margin: 0 10px;
 }
+
 
 /* Time Display */
 .current-time,
@@ -265,6 +277,14 @@ footer {
   color: #1ed760;
   cursor: pointer;
   width: 23px;
+}
+
+.volume-controls button {
+   color: var(--secondary-color);
+  border: 2px solid transparent;
+  background: transparent;
+  box-shadow: 0 0 10px #021308, 0 0 40px #00ff59, 0 0 80px #187539;
+  transition-delay: -1s;
 }
 
 /* Navigation Buttons */
@@ -301,9 +321,13 @@ footer {
 .typed-cursor {
   font-weight: 100;
   font-size: 24px;
-  color: #000000;
+  color: #000000; /* Default color */
   animation: blink 0.7s infinite;
   display: inline-block;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: difference;
 }
 
 @keyframes blink {
@@ -317,7 +341,6 @@ footer {
     opacity: 1;
   }
 }
-
 /* Heading Styles */
 .headingg {
   color: var(--secondary-color); /* Adjust as needed */
