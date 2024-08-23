@@ -175,8 +175,7 @@ audio {
 footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  background-color: transparent;
+  width: 10px;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
