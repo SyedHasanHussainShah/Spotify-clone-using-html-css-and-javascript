@@ -177,6 +177,8 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -188,7 +190,7 @@ footer {
   align-items: center;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 200px; /* Adjust as needed */
+  max-width: 300px; /* Adjust as needed */
 }
 
 .song-title-container {
@@ -196,7 +198,6 @@ footer {
   padding-left: 100%;
   animation: marquee 10s linear infinite;
 }
-
 
 @keyframes marquee {
   from {
