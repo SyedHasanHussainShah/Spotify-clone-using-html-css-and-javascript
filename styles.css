@@ -236,7 +236,7 @@ footer {
 
 .player-controls button {
   color: var(--secondary-color);
-  border: 2px solid transparent;
+  border: 2px none transparent;
   background: transparent;
   box-shadow: 0 0 10px #021308, 0 0 40px #00ff59, 0 0 80px #187539;
   transition-delay: -1s;
