@@ -420,7 +420,7 @@ footer {
 
 /* Dark Mode */
 :root {
-  --primary-color: #121212; /* Dark background */
+  --primary-color: #000000; /* Dark background */
   --secondary-color: #ffffff; /* Light text color */
 }
 
