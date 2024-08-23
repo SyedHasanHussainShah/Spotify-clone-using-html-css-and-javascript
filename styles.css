@@ -425,8 +425,8 @@ footer {
 }
 
 [data-theme="light"] {
-  --primary-color: #ffffff; /* Light background */
-  --secondary-color: #000000; /* Dark text color */
+  --primary-color: #000000; /* Light background */
+  --secondary-color: #ffffff; /* Dark text color */
 }
 
 /* Button Styles */
